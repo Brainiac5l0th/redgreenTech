@@ -1,6 +1,6 @@
 import { Layout } from 'antd';
 import React from 'react';
-import './app.css';
+import './App.css';
 
 import Dashboard from './components/Dashboard/Dashboard';
 import Heading from './components/Heading';

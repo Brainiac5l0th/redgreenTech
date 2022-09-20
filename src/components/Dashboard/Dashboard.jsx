@@ -21,9 +21,9 @@ const Dashboard = () => {
             <div className="dash">
                 <CommonLayout title='Total Sale' className='dash1'>common Child</CommonLayout>
                 <CommonLayout title='Sales Chart'>common Child</CommonLayout>
-                <CommonLayout title='Most Popular Product'>common Child</CommonLayout>
-                <CommonLayout title='Sale'>common Child</CommonLayout>
-                <CommonLayout title='Weather'>common Child</CommonLayout>
+                <CommonLayout title='Most Popular Product' className='dash3'>common Child</CommonLayout>
+                <CommonLayout title='Sale' className='dash4'>common Child</CommonLayout>
+                <CommonLayout title='Weather' className='dash5'>common Child</CommonLayout>
             </div>
 
         </>
