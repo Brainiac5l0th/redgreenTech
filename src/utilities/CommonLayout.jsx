@@ -1,9 +1,21 @@
-import { Card } from 'antd';
+import { Card, DatePicker } from 'antd';
 import React from 'react';
-const CommonLayout = (props,...{children}) => {
+import { IoEllipsisVerticalOutline } from 'react-icons/io5';
+const CommonLayout = (props) => {
+
+  const { title, className, date, children } = props;
   return (
-    <Card title={props.title?props.title:null} className={props.className}>
-        {children}
+    <Card
+      title={title ? title : null}
+      className={`${className} cardCss`}
+      extra={date ?
+        <>
+          <DatePicker style={{ marginRight: '1em' }} picker={date} />
+          <IoEllipsisVerticalOutline />
+        </> : <IoEllipsisVerticalOutline />}
+      
+    >
+      {children}
     </Card>
   )
 }
