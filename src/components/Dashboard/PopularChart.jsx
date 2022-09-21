@@ -41,8 +41,8 @@ const PopularChart = () => {
       ];
       var config = {
         data: data,
-        width:600,
-        height: 400,
+        width:500,
+        height: 350,
         autofit:true,
         xField: "year",
         yField: "value",

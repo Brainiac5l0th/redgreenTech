@@ -50,6 +50,11 @@ body {
   justify-content: space-between;
 }
 
+.spaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+
 .commonBodyText {
   margin-top: 0;
 }

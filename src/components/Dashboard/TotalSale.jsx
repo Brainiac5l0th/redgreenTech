@@ -19,7 +19,7 @@ const TotalSale = () => {
     }
   ]
   return (
-    <CommonDiv>
+    <CommonDiv className='spaceAround'>
       <div >
         {datas.map((data) => (
           <TitleText key={data.name} text={data.name} number={data.value} />

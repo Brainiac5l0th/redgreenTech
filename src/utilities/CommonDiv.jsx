@@ -1,9 +1,9 @@
 import React from 'react';
 
 const CommonDiv = (props ) => {
-    const { children } = props;
+    const { className, children } = props;
     return (
-        <div className='customLayout'>
+        <div className= {`${className} customLayout`}>
             {children}
         </div>
     )
