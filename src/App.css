@@ -5,10 +5,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.menubar {
+.menu {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .sider {
@@ -53,6 +54,7 @@ body {
 .spaceAround {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .commonBodyText {

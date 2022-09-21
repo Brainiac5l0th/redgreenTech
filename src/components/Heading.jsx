@@ -1,16 +1,13 @@
-import { Menu, Avatar, Input } from 'antd';
+import { Avatar, Badge, Input, Space } from 'antd';
 import React from 'react';
+import { BsBell } from 'react-icons/bs';
+
 
 const { Search } = Input;
 const Heading = () => {
     return (
-        <>
-            <Menu
-                theme="light"
-                mode="horizontal"
-                className='menubar'
-            >
-                <div>
+        <div className='menu'>
+            <div>
                 <h3 style={{ color: '#1890FF' }}>
                     <Avatar
                         style={{
@@ -24,19 +21,24 @@ const Heading = () => {
                     </Avatar>
                     LOGOO
                 </h3>
-                </div>
-                <div>
-                    <Search 
-                    style={{
-                        width: 304,
-                      }}
-                    placeholder="input search text" />
-                </div>
-                <div className="rightSideMenu">
-                    <h3>hell</h3>
-                </div>
-            </Menu>
-        </>
+            </div>
+            <Search
+                style={{
+                    width: 400,
+                    alignItems: 'center'
+                }}
+                placeholder="input search text" />
+            
+            <div style={{ flex: '1 1 0%' }}></div>
+            <div className="rightSideMenu">
+                <Space>
+                <Badge dot>
+        <Avatar shape="circle" icon={<BsBell/>} />
+      </Badge>
+                    title with logo
+                </Space>
+            </div>
+        </div>
     )
 }
 
